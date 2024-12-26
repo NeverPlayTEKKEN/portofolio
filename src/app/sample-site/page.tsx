@@ -1,0 +1,40 @@
+export default function Sample () {
+    return (
+        <main>
+            <h1>作成したWebサイト</h1>
+            <h2>リンク</h2>
+            <ul>
+                <li>
+                    <h3>サイトリンク</h3>
+                </li>
+                <li>
+                    <h3>デザイン</h3>
+                </li>
+                <li>
+                    <h3>ソースコード</h3>
+                </li>
+            </ul>
+            <h2>技術</h2>
+            <ul>
+                <li>
+                    <h3>Next.js</h3>
+                    <p>説明説明説明</p>
+                </li>
+                <li>
+                    <h3>Tailwind CSS</h3>
+                    <p>説明説明説明</p>
+                </li>
+                <li>
+                    <h3>Vercel</h3>
+                    <p>説明説明説明</p>
+                </li>
+                <li>
+                    <h3>microCMS</h3>
+                    <p>説明説明説明</p>
+                </li>
+            </ul>
+            <h2>理解したこと</h2>
+            <h2>反省</h2>
+        </main>
+    )
+}
