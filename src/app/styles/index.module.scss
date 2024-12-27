@@ -10,7 +10,7 @@
     left: 0;
     transform-origin: left center;
     background-color: #3F3F3F;
-    animation: slide 2s ease 0s 1 alternate none running;
+    animation: slide 1.5s ease 0s 1 alternate none running;
   
   }
 
@@ -43,6 +43,7 @@
 .linkstyle{
   margin: 0 20px 0 20px;
   text-align: center;
+  animation: fadein 1.5s ease 0s 1 alternate none running;
 
   .linkcircle {
     width: 80px;
@@ -66,4 +67,14 @@
   100% {
     transform: scaleX(1)
   };
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
