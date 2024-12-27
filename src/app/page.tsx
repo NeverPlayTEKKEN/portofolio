@@ -1,19 +1,38 @@
+import { Stint_Ultra_Condensed } from "next/font/google/index";
 import Link from "next/link";
-import styles from "./index.module.scss"
+import styles from "./styles/index.module.scss"
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section className={styles.name}>
-        <p>Naoki</p>
-        <p>Okamoto</p>
-      </section>
-      <section className={styles.links}>
-        <Link href="/sample-site" className={styles.link}><div className={styles.circle}></div><p className={styles.label}>サンプルサイト</p></Link>
-        <Link href="/with-ts" className={styles.link} ><div className={styles.circle}></div><p className={styles.label}>TypeScriptであそぶ</p></Link>
-        <Link href="/" className={styles.link}><div className={styles.circle}></div><p className={styles.label}>わたしについて</p></Link>
-      </section>
+      <div className={styles.namecontainer}>
+        <section className={styles.sectionstyles}>
+          <p>Naoki</p>
+          <p>Okamoto</p>
+        </section>
+      </div>
+      <div className={styles.linkcontainer}>
+        <MyLink label="わたしについて" href="/" />
+        <MyLink label="サイトサンプル" href="/sample-site" />
+        <MyLink label="TypeScriptであそぶ" href="/with-ts" />
+      </div>
     </main>
 
   );
+}
+
+
+type LinkProps = {
+  label:string,
+  href:string
+}
+
+function MyLink(props: LinkProps) {
+  return (
+    <Link href={props.href} className={styles.linkstyle}>
+      <div className={styles.linkcircle}></div>
+      <label className={styles.labelstyle}>{props.label}</label>
+    </Link>
+  )
+
 }

@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  height: 100vh;
+
+  .namecontainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3F3F3F;
+    text-emphasis-color: white;
+
+    .sectionstyles {
+      width: fit-content;
+      color: white
+    }
+  }
+
+  .linkcontainer {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.linkstyle{
+  margin: 0 20px 0 20px;
+  text-align: center;
+
+  .linkcircle {
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: grey;
+  }
+
+  .labelstyle {
+    font-size: 0.25rem
+  }
+
+}
