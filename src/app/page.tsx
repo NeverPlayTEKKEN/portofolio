@@ -6,11 +6,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.namecontainer}>
-        <section className={styles.sectionstyles}>
+      </div>
+      <section className={styles.sectionstyles}>
+        <div>
           <p>Naoki</p>
           <p>Okamoto</p>
-        </section>
-      </div>
+        </div>
+      </section>
+      
       <div className={styles.linkcontainer}>
         <MyLink label="わたしについて" href="/" />
         <MyLink label="サイトサンプル" href="/sample-site" />

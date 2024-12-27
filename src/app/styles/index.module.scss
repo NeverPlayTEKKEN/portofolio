@@ -1,30 +1,42 @@
 .main {
-  display: flex;
   height: 100vh;
+  position: relative;
 
   .namecontainer {
     width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     transform-origin: left center;
+    background-color: #3F3F3F;
+    animation: slide 2s ease 0s 1 alternate none running;
+  
+  }
+
+  .sectionstyles {
+    width: 50%;
+    height: 100vh;
+    color: white;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3F3F3F;
-    text-emphasis-color: white;
-    animation: slide 2s ease 0s 1 alternate none running;
-
-
-    .sectionstyles {
-      width: fit-content;
-      color: white;
-    }
   }
 
   .linkcontainer {
     width: 50%;
+    height: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
   }
 }
 
