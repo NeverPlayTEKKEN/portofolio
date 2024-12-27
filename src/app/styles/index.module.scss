@@ -4,15 +4,18 @@
 
   .namecontainer {
     width: 50%;
+    transform-origin: left center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #3F3F3F;
     text-emphasis-color: white;
+    animation: slide 2s ease 0s 1 alternate none running;
+
 
     .sectionstyles {
       width: fit-content;
-      color: white
+      color: white;
     }
   }
 
@@ -40,4 +43,15 @@
     font-size: 0.25rem
   }
 
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleX(0.2);
+  }
+
+
+  100% {
+    transform: scaleX(1)
+  };
 }
