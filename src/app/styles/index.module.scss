@@ -40,22 +40,15 @@
   }
 }
 
-.linkstyle{
-  margin: 0 20px 0 20px;
-  text-align: center;
-  animation: fadein 1.5s ease 0s 1 alternate none running;
+.linkcircle {
+  width: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: grey;
+}
 
-  .linkcircle {
-    width: 80px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: grey;
-  }
-
-  .labelstyle {
-    font-size: 0.25rem
-  }
-
+.labelstyle {
+  font-size: 0.25rem
 }
 
 @keyframes slide {
@@ -69,12 +62,3 @@
   };
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
