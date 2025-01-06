@@ -17,7 +17,7 @@
   .sectionstyles {
     width: 50%;
     height: 100vh;
-    color: white;
+    color: #f9fafb;
     position: absolute;
     font-size: 1.5rem;
     top: 0;
@@ -31,7 +31,6 @@
   .linkcontainer {
     width: 50%;
     height: 100%;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +44,7 @@
     bottom: 30px;
     right: 30px;
     display: flex;
+    align-items: end;
   }
 
   .anker {
@@ -53,12 +53,17 @@
     aspect-ratio: 1/1;
     opacity: 0%;
     animation: fadein 1.5s ease 2.5s 1 alternate forwards running;
+    transition: all 0.3s
+  }
+
+  .anker:hover{
+    transform: scale(1.3);
   }
 }
 
 
 .labelstyle {
-  font-size: 0.25rem
+  font-size: 0.50rem
 }
 
 @keyframes slide {

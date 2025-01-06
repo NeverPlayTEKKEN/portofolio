@@ -55,7 +55,8 @@ function MyLink(props: LinkProps) {
     aspectRatio: '1/1',
     borderRadius: '50%',
     background: 'linear-gradient(to right, #4b5563, #9ca3af)',
-    animation: `vib 3s ease ${vibsec}s infinite normal none running`
+    animation: `vib 3s ease ${vibsec}s infinite normal none running`,
+    transition: 'all 0.3s'
   }
 
   return (
