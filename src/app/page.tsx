@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import React from "react";
-import styles from "./styles/index.module.scss"
+import styles from "./styles/index.module.css"
 
 export default function Home() {
   return (
@@ -10,7 +8,7 @@ export default function Home() {
       </div>
       <section className={styles.sectionstyles}>
         <div>
-          <p>Naoki</p>
+          <p className="md:font-serif">Naoki</p>
           <p>Okamoto</p>
         </div>
       </section>
@@ -93,9 +91,9 @@ function MyLink(props: LinkProps) {
       }
       `}
     </style>
-    <Link href={Props.href} style={linkstyles}>
+    <Link href={Props.href} style={linkstyles} className="medialink">
       <div style={circlestyles}></div>
-      <label className={styles.labelstyle}>{props.label}</label>
+      <label className="md:text-pink-200">{props.label}</label>
     </Link>
     </>
   )
