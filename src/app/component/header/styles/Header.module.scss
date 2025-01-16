@@ -1,0 +1,19 @@
+@use "../../../styles/breakpoint.module.scss" as bp;
+
+.headerContainer {
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    display: flex;
+
+    .tittleContainer {
+        width: 50%
+    }
+    .linkContainer {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+}
+
+
+

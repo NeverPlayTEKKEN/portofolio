@@ -1,0 +1,7 @@
+@use "../../../styles/breakpoint.module.scss" as bp;
+
+.navItems {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+}
