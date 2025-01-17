@@ -1,0 +1,48 @@
+@use "../../../app/styles/breakpoint.module.scss" as bp;
+
+.headerContainer {
+    height: 3rem;
+    @include bp.breakPoint("sm") {
+        height: 4rem;
+    }
+    @include bp.breakPoint("lg") {
+        height: 5rem;
+    }
+    @include bp.breakPoint("xl") {
+        height: 6rem;
+    }
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    display: flex;
+    align-items: center;
+    
+
+    .tittleContainer {
+        width: 50%;
+        padding-left: 1rem;
+    }
+    .linkContainer {
+        padding-right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+}
+
+
+
+.navItems {
+    position: fixed;
+    width: 10rem;
+    top: 3rem;
+    @include bp.breakPoint("sm") {
+        top: 4rem;
+    }
+    @include bp.breakPoint("lg") {
+        top: 5rem;
+    }
+    @include bp.breakPoint("xl") {
+        top: 6rem;
+    }
+    right: 0;
+}

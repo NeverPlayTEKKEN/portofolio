@@ -1,9 +1,11 @@
 'use client'
 
 import { useState, useEffect, useRef } from "react";
-import styles from "./styles/Hamburger.module.scss";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+import { JSX } from "react/jsx-dev-runtime";
 
-export const Hamburger = () => {
+
+export const Hamburger = (props: {children: JSX.Element}) => {
 
     const [isMenuVisible, setIsMenuVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
@@ -27,16 +29,10 @@ export const Hamburger = () => {
 
     return (
         <div ref={ref}>
-            <div onClick={()=>{setIsMenuVisible(!isMenuVisible)}}>{isMenuVisible ? ("×"):("a")}</div>
-            {isMenuVisible ? (<NavItems />):(<></>)}
+            <div onClick={()=>{setIsMenuVisible(!isMenuVisible)}}>{isMenuVisible ? (<XMarkIcon className="w-5 h-5" />):(<Bars3Icon className="w-5 h-5"/>)}</div>
+            {isMenuVisible ? (props.children):(<></>)}
         </div>
     )
 }
 
 
-const NavItems = () => {
-
-    return (
-        <nav className={styles.navItems}>Hello world!</nav>
-    )
-}

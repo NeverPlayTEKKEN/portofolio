@@ -1,0 +1,20 @@
+.button {
+    padding: 0 1rem 0 1rem;
+    margin:0 0.1rem 0 0.1rem;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+}
+
+.activeButton {
+    padding: 0 1rem 0 1rem;
+    margin:0 0.1rem 0 0.1rem;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    background: #fde68a;
+}
+
+.content {
+    margin:0 0.1rem 0 0.1rem;
+    padding: 0 1rem 0 1rem;
+    border: 1px solid gray;
+}

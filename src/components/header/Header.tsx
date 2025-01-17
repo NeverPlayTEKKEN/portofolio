@@ -5,8 +5,8 @@ type HeaderProps = {
     tittle: string;
 }
 
-const Header = (props:HeaderProps) => {
-    const {tittle} = props;
+export const Header = (props:HeaderProps) => {
+    const { tittle } = props;
 
     return (
         <div className={styles.headerContainer}>
@@ -14,9 +14,17 @@ const Header = (props:HeaderProps) => {
                 <h1>{tittle}</h1>
             </div>
             <div className={styles.linkContainer}>
-                <Hamburger />
+                <Hamburger>
+                    <NavItems />
+                </Hamburger>
             </div>
         </div>
     )
 };
-export default Header;
+
+const NavItems = () => {
+
+    return (
+        <nav className={styles.navItems}>Hello world!</nav>
+    )
+}
