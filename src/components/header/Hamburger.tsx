@@ -29,7 +29,7 @@ export const Hamburger = (props: {children: JSX.Element}) => {
 
     return (
         <div ref={ref}>
-            <div onClick={()=>{setIsMenuVisible(!isMenuVisible)}}>{isMenuVisible ? (<XMarkIcon className="w-5 h-5" />):(<Bars3Icon className="w-5 h-5"/>)}</div>
+            <div onClick={()=>{setIsMenuVisible(!isMenuVisible)} } className="w-fit">{isMenuVisible ? (<XMarkIcon className="w-5 h-5" />):(<Bars3Icon className="w-5 h-5"/>)}</div>
             {isMenuVisible ? (props.children):(<></>)}
         </div>
     )

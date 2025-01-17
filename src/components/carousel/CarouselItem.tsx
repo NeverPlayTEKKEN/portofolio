@@ -7,6 +7,7 @@ import { ReactElement } from "react";
 import ReactDOMServer from 'react-dom/server';
 
 type CarouselItemProps = {
+    name:string;
     render: (props:any) => ReactElement;
     propslist ?: {
         [key:string] : any;
@@ -18,10 +19,11 @@ type CarouselItemProps = {
 
 export const CarouselItem = (props: CarouselItemProps) => {
 
-    const { propslist, isJSX=false, srccode } = props
+    const { name, propslist, isJSX=false, srccode } = props
 
     return (
         <div>
+            <h2>{name}</h2>
             <div>
                 {props.render(propslist)}
             </div>

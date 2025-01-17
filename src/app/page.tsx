@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <Header tittle="Naoki's Portofolio"/>
-      <CarouselItem render={Hamburger} propslist={{children: HumbergerPropsChildren}} isJSX={true} srccode={Hamburgersrc}/>
+      <CarouselItem name="ハンバーガーメニュー" render={Hamburger} propslist={{children: HumbergerPropsChildren}} isJSX={true} srccode={Hamburgersrc}/>
     </div>
   );
 }
