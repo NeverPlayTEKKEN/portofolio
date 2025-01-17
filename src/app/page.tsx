@@ -4,10 +4,18 @@ import { Hamburger } from "@/components/header/Hamburger";
 
 export default function Home() {
 
+  const HumbergerPropsChildren = (
+    <ul>
+      <li>Hello</li>
+      <li>New</li>
+      <li>World!</li>
+    </ul>
+  )
+
   return (
     <div>
       <Header tittle="Naoki's Portofolio"/>
-      <CarouselItem render={Hamburger} propslist={{children: <div>hello world!</div>}} isJSX={true} srccode={Hamburgersrc}/>
+      <CarouselItem render={Hamburger} propslist={{children: HumbergerPropsChildren}} isJSX={true} srccode={Hamburgersrc}/>
     </div>
   );
 }

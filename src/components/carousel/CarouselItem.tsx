@@ -30,7 +30,8 @@ export const CarouselItem = (props: CarouselItemProps) => {
                     labels={["props", "src"]}
                     contents={[
                         <table>
-                            <tr><th>name</th><th>data</th></tr>
+                            <thead><tr><th>name</th><th>data</th></tr></thead>
+                            <tbody>
                             {propslist && Object.keys(propslist).map((key, index)=>
                                 <tr>
                                     <td>{key}</td>
@@ -39,9 +40,10 @@ export const CarouselItem = (props: CarouselItemProps) => {
                                     }</td>
                                 </tr>
                             )}
+                            </tbody>
                             
                         </table>,
-                        <SyntaxHighlighter language="typescript" style={docco} customStyle={{fontSize: "12px"}}>{srccode}</SyntaxHighlighter>
+                        <SyntaxHighlighter language="typescript" style={docco} customStyle={{fontSize: "0.75rem"}}>{srccode}</SyntaxHighlighter>
                     ]} />
             </div>
         </div>
