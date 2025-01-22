@@ -1,0 +1,20 @@
+.itemcontainer {
+    width : 80%;
+
+    h2 {
+        text-align: center;
+    }
+    .comp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 16 / 9;
+        border: 1px solid gray;
+        border-radius: 2px;
+    }
+    .srccontainer {
+        margin-top: 0.5rem;
+
+        
+    }
+}
