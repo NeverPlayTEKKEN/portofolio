@@ -5,6 +5,7 @@ import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Tab } from "../tab/Tab";
 import { ReactElement } from "react";
 import ReactDOMServer from 'react-dom/server';
+import styles from "./styles/CarsouselItem.module.scss";
 
 type CarouselItemProps = {
     name:string;
@@ -22,20 +23,20 @@ export const CarouselItem = (props: CarouselItemProps) => {
     const { name, propslist, isJSX=false, srccode } = props
 
     return (
-        <div>
+        <div className={styles.itemcontainer}>
             <h2>{name}</h2>
-            <div>
+            <div className={styles.comp}>
                 {props.render(propslist)}
             </div>
-            <div>
+            <div className={styles.srccontainer}>
                 <Tab
-                    labels={["props", "src"]}
+                    labels={["props", "github", "src"]}
                     contents={[
                         <table>
                             <thead><tr><th>name</th><th>data</th></tr></thead>
                             <tbody>
                             {propslist && Object.keys(propslist).map((key, index)=>
-                                <tr>
+                                <tr key={index}>
                                     <td>{key}</td>
                                     <td style={{ whiteSpace: 'pre-wrap' }}>{
                                         isJSX && ReactDOMServer.renderToStaticMarkup(propslist[key])
@@ -45,7 +46,10 @@ export const CarouselItem = (props: CarouselItemProps) => {
                             </tbody>
                             
                         </table>,
-                        <SyntaxHighlighter language="typescript" style={docco} customStyle={{fontSize: "0.75rem"}}>{srccode}</SyntaxHighlighter>
+                        <p>this is link</p>,
+                        <div className={styles.src}>
+                            <SyntaxHighlighter language="typescript" style={docco} customStyle={{fontSize: "0.8rem"}}>{srccode}</SyntaxHighlighter>
+                        </div>
                     ]} />
             </div>
         </div>

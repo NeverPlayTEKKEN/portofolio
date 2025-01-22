@@ -15,6 +15,7 @@ export const Tab = (props: TabProps) => {
             <div>
                 {props.labels.map((label, index)=>
                     <button
+                        key={index}
                         onClick={() => {setViewIndex(index + 1)}}
                         className={viewIndex===index+1 ? styles.activeButton : styles.button }
                     >{label}</button>

@@ -1,20 +1,22 @@
 .button {
     padding: 0 1rem 0 1rem;
-    margin:0 0.1rem 0 0.1rem;
+    margin:0 0.2rem 0 0;
     border: 1px solid gray;
-    border-radius: 0.2rem;
+    border-radius: 2px;
 }
 
 .activeButton {
     padding: 0 1rem 0 1rem;
-    margin:0 0.1rem 0 0.1rem;
+    margin:0 0.2rem 0 0rem;
     border: 1px solid gray;
-    border-radius: 0.2rem;
+    border-radius: 2px;
     background: #fde68a;
 }
 
 .content {
-    margin:0 0.1rem 0 0.1rem;
-    padding: 0 1rem 0 1rem;
     border: 1px solid gray;
+    width : 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    overflow: scroll;
 }
