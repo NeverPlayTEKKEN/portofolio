@@ -6,7 +6,6 @@ import { Tab } from "../tab/Tab";
 import { ReactElement } from "react";
 import ReactDOMServer from 'react-dom/server';
 import styles from "./styles/CarsouselItem.module.scss";
-import { stringify } from "querystring";
 
 type CarouselItemProps = {
     name:string;
