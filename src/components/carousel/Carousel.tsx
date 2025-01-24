@@ -27,7 +27,7 @@ export const Carousel = () => {
             <div className={styles.embla} ref={emblaRef}>
                 <div className={styles.embla__container}>
                     <div className={styles.embla__slide}>
-                        <CarouselItem name="ハンバーガーメニュー" render={Hamburger} propslist={{children: HumbergerPropsChildren}} isJSX={true} srccode={Hamburgersrc}/>
+                        <CarouselItem name="ハンバーガーメニュー" render={Hamburger} propslist={{children: HumbergerPropsChildren}}  srccode={Hamburgersrc}/>
                     </div>
                     <div className={styles.embla__slide}>
                         <CarouselItem name="タブ" render={Tab} propslist={{labels:["hello", "world"], contents:["hello", "world"]}} srccode={Tabsrc} />
