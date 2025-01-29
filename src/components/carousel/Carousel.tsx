@@ -30,7 +30,7 @@ export const Carousel = () => {
                         <CarouselItem name="ハンバーガーメニュー" render={Hamburger} propslist={{children: HumbergerPropsChildren}}  srccode={Hamburgersrc}/>
                     </div>
                     <div className={styles.embla__slide}>
-                        <CarouselItem name="タブ" render={Tab} propslist={{labels:["hello", "world"], contents:["hello", "world"]}} srccode={Tabsrc} />
+                        <CarouselItem name="タブ" render={Tab} propslist={{labels:["hello", "world"], contents:["こんにちは", "せかい"]}} srccode={Tabsrc} />
                     </div>
                 </div> 
             </div>
