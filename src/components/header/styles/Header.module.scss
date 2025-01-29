@@ -33,8 +33,8 @@
 
 .navItems {
     position: fixed;
-    width: 10rem;
-    top: 3rem;
+    top: 3.1rem;
+    padding: 0 0.25rem 0 0.25rem;
     @include bp.breakPoint("sm") {
         top: 4rem;
     }
@@ -46,4 +46,5 @@
     }
     right: 0;
     background-color: white;
+    z-index: 20;
 }

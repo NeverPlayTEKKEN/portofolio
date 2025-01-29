@@ -25,6 +25,10 @@ export const Header = (props:HeaderProps) => {
 const NavItems = () => {
 
     return (
-        <nav className={styles.navItems}>Hello world!</nav>
+        <nav className={styles.navItems}>
+            <li>Components</li>
+            <li>Sample Site</li>
+            <li>About Me</li>
+        </nav>
     )
 }

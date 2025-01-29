@@ -20,13 +20,6 @@
         border-radius: 2px;
     }
     .srccontainer {
-        margin-top: 0.5rem;
-
-        .src {
-            width : 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-            overflow: scroll;
-        }
+        text-align: center;
     }
 }
